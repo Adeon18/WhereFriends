@@ -47,7 +47,8 @@ def load_map(user_data: dict):
 
     mapp.add_child(loc_fg)
     mapp.add_child(folium.LayerControl())
-    mapp.save("flaskr/templates/Friends.html")
+
+    return mapp
 
 
 if __name__ == '__main__':

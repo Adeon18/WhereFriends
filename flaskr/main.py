@@ -26,9 +26,9 @@ def register():
     if data == False:
         return render_template("failure.html")
     # Create the map
-    load_map(find_coords(extract_data(data)))
+    mapp = load_map(find_coords(extract_data(data)))
     
-    return render_template("Friends.html")
+    return mapp._repr_html_()
 
 
 if __name__ == '__main__':
